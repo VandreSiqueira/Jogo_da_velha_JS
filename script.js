@@ -21,8 +21,10 @@ $(()=> {
     function fazerJogada(e) {
         if(count %2 == 0) {
             e.target.value = "X";
+            e.target.style.color = "aqua";
         } else {
             e.target.value = "O";
+            e.target.style.color = "red";
         }
     
         count ++;
@@ -154,7 +156,7 @@ $(()=> {
             }
             
         }
-        
+
         $("button").click(limparTabuleiro);
         
     }
